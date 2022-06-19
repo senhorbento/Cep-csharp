@@ -7,7 +7,7 @@ namespace consumindo_api_rest_csharp.API
 {
     public class RequestApi
     {
-        public static async Task<EntidadeCep> Request(string cep)
+        public async Task<EntidadeCep> Request(string cep)
         {
             EntidadeCep address = new EntidadeCep();
             try
