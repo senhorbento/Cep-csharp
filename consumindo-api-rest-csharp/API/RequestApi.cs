@@ -17,8 +17,7 @@ namespace consumindo_api_rest_csharp.API
             }
             catch(Exception e)
             {
-                Debug.WriteLine("Erro" + e);
-                address.cep = "Cep não encontrado";
+                address.erro = "true";
             }
             return address;
         }

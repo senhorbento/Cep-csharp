@@ -24,5 +24,7 @@ namespace consumindo_api_rest_csharp.API
         public string ddd               { get; set; }
         [JsonProperty("siafi")]
         public string siafi             { get; set; }
+        [JsonProperty("erro")]
+        public string erro { get; set; }
     }
 }

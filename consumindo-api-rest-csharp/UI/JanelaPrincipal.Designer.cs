@@ -57,7 +57,7 @@ namespace consumindo_api_rest_csharp
             // 
             // BtFechar
             // 
-            this.BtFechar.Location = new System.Drawing.Point(12, 376);
+            this.BtFechar.Location = new System.Drawing.Point(12, 322);
             this.BtFechar.Name = "BtFechar";
             this.BtFechar.Size = new System.Drawing.Size(75, 23);
             this.BtFechar.TabIndex = 0;
@@ -112,91 +112,91 @@ namespace consumindo_api_rest_csharp
             // 
             // TxBoxCep
             // 
-            this.TxBoxCep.Enabled = false;
             this.TxBoxCep.Location = new System.Drawing.Point(117, 55);
             this.TxBoxCep.MaxLength = 8;
             this.TxBoxCep.Name = "TxBoxCep";
+            this.TxBoxCep.ReadOnly = true;
             this.TxBoxCep.Size = new System.Drawing.Size(181, 20);
             this.TxBoxCep.TabIndex = 6;
             // 
             // TxBoxLogradouro
             // 
-            this.TxBoxLogradouro.Enabled = false;
             this.TxBoxLogradouro.Location = new System.Drawing.Point(117, 81);
             this.TxBoxLogradouro.MaxLength = 8;
             this.TxBoxLogradouro.Name = "TxBoxLogradouro";
+            this.TxBoxLogradouro.ReadOnly = true;
             this.TxBoxLogradouro.Size = new System.Drawing.Size(181, 20);
             this.TxBoxLogradouro.TabIndex = 7;
             // 
             // TxBoxComplemento
             // 
-            this.TxBoxComplemento.Enabled = false;
             this.TxBoxComplemento.Location = new System.Drawing.Point(117, 107);
             this.TxBoxComplemento.MaxLength = 8;
             this.TxBoxComplemento.Name = "TxBoxComplemento";
+            this.TxBoxComplemento.ReadOnly = true;
             this.TxBoxComplemento.Size = new System.Drawing.Size(181, 20);
             this.TxBoxComplemento.TabIndex = 8;
             // 
             // TxBoxBairro
             // 
-            this.TxBoxBairro.Enabled = false;
             this.TxBoxBairro.Location = new System.Drawing.Point(117, 133);
             this.TxBoxBairro.MaxLength = 8;
             this.TxBoxBairro.Name = "TxBoxBairro";
+            this.TxBoxBairro.ReadOnly = true;
             this.TxBoxBairro.Size = new System.Drawing.Size(181, 20);
             this.TxBoxBairro.TabIndex = 9;
             // 
             // TxBoxLocalidade
             // 
-            this.TxBoxLocalidade.Enabled = false;
             this.TxBoxLocalidade.Location = new System.Drawing.Point(117, 159);
             this.TxBoxLocalidade.MaxLength = 8;
             this.TxBoxLocalidade.Name = "TxBoxLocalidade";
+            this.TxBoxLocalidade.ReadOnly = true;
             this.TxBoxLocalidade.Size = new System.Drawing.Size(181, 20);
             this.TxBoxLocalidade.TabIndex = 10;
             // 
             // TxBoxUf
             // 
-            this.TxBoxUf.Enabled = false;
             this.TxBoxUf.Location = new System.Drawing.Point(117, 185);
             this.TxBoxUf.MaxLength = 8;
             this.TxBoxUf.Name = "TxBoxUf";
+            this.TxBoxUf.ReadOnly = true;
             this.TxBoxUf.Size = new System.Drawing.Size(181, 20);
             this.TxBoxUf.TabIndex = 11;
             // 
             // TxBoxSiafi
             // 
-            this.TxBoxSiafi.Enabled = false;
             this.TxBoxSiafi.Location = new System.Drawing.Point(117, 289);
             this.TxBoxSiafi.MaxLength = 8;
             this.TxBoxSiafi.Name = "TxBoxSiafi";
+            this.TxBoxSiafi.ReadOnly = true;
             this.TxBoxSiafi.Size = new System.Drawing.Size(181, 20);
             this.TxBoxSiafi.TabIndex = 12;
             // 
             // TxBoxDdd
             // 
-            this.TxBoxDdd.Enabled = false;
             this.TxBoxDdd.Location = new System.Drawing.Point(117, 263);
             this.TxBoxDdd.MaxLength = 8;
             this.TxBoxDdd.Name = "TxBoxDdd";
+            this.TxBoxDdd.ReadOnly = true;
             this.TxBoxDdd.Size = new System.Drawing.Size(181, 20);
             this.TxBoxDdd.TabIndex = 13;
             // 
             // TxBoxGia
             // 
-            this.TxBoxGia.Enabled = false;
             this.TxBoxGia.Location = new System.Drawing.Point(117, 237);
             this.TxBoxGia.MaxLength = 8;
             this.TxBoxGia.Name = "TxBoxGia";
+            this.TxBoxGia.ReadOnly = true;
             this.TxBoxGia.Size = new System.Drawing.Size(181, 20);
             this.TxBoxGia.TabIndex = 14;
             // 
             // TxBoxIbge
             // 
-            this.TxBoxIbge.Enabled = false;
             this.TxBoxIbge.Location = new System.Drawing.Point(117, 211);
             this.TxBoxIbge.MaxLength = 8;
             this.TxBoxIbge.Name = "TxBoxIbge";
+            this.TxBoxIbge.ReadOnly = true;
             this.TxBoxIbge.Size = new System.Drawing.Size(181, 20);
             this.TxBoxIbge.TabIndex = 15;
             // 
@@ -274,9 +274,9 @@ namespace consumindo_api_rest_csharp
             // 
             // JanelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 411);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(334, 357);
             this.ControlBox = false;
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -302,7 +302,9 @@ namespace consumindo_api_rest_csharp
             this.Controls.Add(this.LbLogradouro);
             this.Controls.Add(this.BtConsultar);
             this.Controls.Add(this.BtFechar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "JanelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Cep";
             this.ResumeLayout(false);
             this.PerformLayout();

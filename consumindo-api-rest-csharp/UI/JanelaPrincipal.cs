@@ -20,15 +20,8 @@ namespace consumindo_api_rest_csharp
             address = Task.Run(async () => await task.Request(cep)).Result;
         }
 
-        private void BtFechar_Click(object sender, EventArgs e)
+        public void PreencherCaixas()
         {
-            Dispose();
-        }
-
-        private void BtConsultar_Click(object sender, EventArgs e)
-        {
-            GetEntidade(TxBoxInput.Text);
-            TxBoxInput.Text = "";
             TxBoxCep.Text = address.cep;
             TxBoxLogradouro.Text = address.logradouro;
             TxBoxComplemento.Text = address.complemento;
@@ -39,6 +32,21 @@ namespace consumindo_api_rest_csharp
             TxBoxGia.Text = address.gia;
             TxBoxDdd.Text = address.ddd;
             TxBoxSiafi.Text = address.siafi;
+        }
+
+        private void BtFechar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void BtConsultar_Click(object sender, EventArgs e)
+        {
+            GetEntidade(TxBoxInput.Text);
+            TxBoxInput.Text = "";
+            if (address.erro == "true")
+                TxBoxCep.Text = "Cep não encontrado";
+            else
+                PreencherCaixas();
         }
     }
 }
