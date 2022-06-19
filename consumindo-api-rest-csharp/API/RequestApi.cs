@@ -1,29 +1,25 @@
 ﻿using Refit;
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace consumindo_api_rest_csharp.API
 {
     public class RequestApi
     {
-        public EntidadeCep address = new EntidadeCep();
-        public async Task Request(string cep)
+        public static async Task<EntidadeCep> Request(string cep)
         {
+            EntidadeCep address = new EntidadeCep();
             try
             {
                 var cepCliente = RestService.For<ICepApiService>("http://viacep.com.br");
                 address = await cepCliente.GetAddressAsync(cep);
-
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro" + e);
+                Debug.WriteLine("Erro" + e);
+                address.cep = "Cep não encontrado";
             }
-        }
-
-        public EntidadeCep GetEntidade(string cep)
-        {
-            _ = Request(cep);
             return address;
         }
     }
