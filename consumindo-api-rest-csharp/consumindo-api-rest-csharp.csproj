@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\EntidadeCep.cs" />
+    <Compile Include="API\ICepApiService.cs" />
+    <Compile Include="API\RequestApi.cs" />
     <Compile Include="UI\JanelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
