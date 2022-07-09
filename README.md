@@ -1,2 +1,2 @@
-# consumindo-api-rest-csharp
-Repositório criado com a finalidade de consumir uma api utilizando csharp
+# Cep-csharp
+Repositório criado com a finalidade de consumir a api do viacep utilizando Csharp
